@@ -1,7 +1,7 @@
 package com.driver;
 
 public class Main {
-	public class A {
+	public static class A {
 	     
 		public String meth()
 		{
@@ -9,7 +9,7 @@ public class Main {
 		}
 	}
 	
-	public class B extends  A {
+	public static class B extends  A {
 		
 		public String meth()
 		{
@@ -20,8 +20,8 @@ public class Main {
 		}
 	public static void main(String args[])
 	{
-		Main m=new Main();
-		Main.B b=m.new B();
+		
+		B b=new B();
 		
 		System.out.println(b.meth());
 		
